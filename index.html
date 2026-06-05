@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="WallGamers — a home for games. Discover playable projects and peek at snapshots of what's coming next." />
+  <title>WallGamers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>" />
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="WallGamers home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="28" height="28" fill="none">
+          <rect x="2" y="9" width="28" height="16" rx="6" fill="url(#g1)" />
+          <circle cx="11" cy="17" r="2.4" fill="#0b0f1a" />
+          <circle cx="9" cy="14.6" r="1.4" fill="#0b0f1a" />
+          <circle cx="9" cy="19.4" r="1.4" fill="#0b0f1a" />
+          <circle cx="7" cy="17" r="1.4" fill="#0b0f1a" />
+          <circle cx="13" cy="17" r="1.4" fill="#0b0f1a" />
+          <circle cx="21" cy="15" r="2.1" fill="#0b0f1a" />
+          <circle cx="25" cy="19" r="2.1" fill="#0b0f1a" />
+          <defs>
+            <linearGradient id="g1" x1="2" y1="9" x2="30" y2="25" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#7c5cff" />
+              <stop offset="1" stop-color="#19d4c8" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </span>
+      <span class="brand-name">Wall<span class="brand-accent">Gamers</span></span>
+    </a>
+
+    <nav class="tabs" role="tablist" aria-label="Sections">
+      <button class="tab is-active" role="tab" aria-selected="true" data-view="links">
+        <span class="tab-dot"></span>Links
+      </button>
+      <button class="tab" role="tab" aria-selected="false" data-view="snapshots">
+        <span class="tab-dot"></span>Snapshots
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">A home for games</p>
+      <h1>Play what's ready.<br /><span class="hero-accent">Peek at what's next.</span></h1>
+      <p class="hero-sub">
+        WallGamers collects playable projects and early snapshots in one place — jump into a
+        game, or get a glimpse of what's still being built.
+      </p>
+      <div class="hero-stats" id="hero-stats"></div>
+    </section>
+
+    <!-- LINKS VIEW -->
+    <section class="view is-active" id="view-links" aria-labelledby="links-heading">
+      <div class="section-head">
+        <h2 id="links-heading"><span class="section-icon">🚀</span> Games &amp; Links</h2>
+        <p class="section-desc">Live projects you can play or explore right now.</p>
+      </div>
+      <div class="grid links-grid" id="links-grid"></div>
+    </section>
+
+    <!-- SNAPSHOTS VIEW -->
+    <section class="view" id="view-snapshots" aria-labelledby="snapshots-heading" hidden>
+      <div class="section-head">
+        <h2 id="snapshots-heading"><span class="section-icon">📸</span> Snapshots</h2>
+        <p class="section-desc">A look at games in progress — concepts and works coming together.</p>
+      </div>
+      <div class="grid snapshots-grid" id="snapshots-grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> WallGamers — built for players.</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
