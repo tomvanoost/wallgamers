@@ -1,5 +1,5 @@
 /**
- * WallGamers content.
+ * Voxely content.
  * To add a new game/link, push an object to LINKS.
  * To add a new snapshot, push an object to SNAPSHOTS.
  * Nothing else needs to change — the page renders from these arrays.
@@ -8,7 +8,7 @@
 const LINKS = [
   {
     name: "CubeLands",
-    url: "https://cubelands.wallgamers.net",
+    url: "https://cubelands.voxely.org",
     tag: "Voxel Sandbox",
     accent: "#19d4c8",
     description:

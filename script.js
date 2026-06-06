@@ -1,4 +1,4 @@
-/* WallGamers — renders content from data.js and handles tab switching. */
+/* Voxely — renders content from data.js and handles tab switching. */
 
 (function () {
   "use strict";
